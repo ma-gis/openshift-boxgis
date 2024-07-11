@@ -16,7 +16,7 @@ def index():
 
 @app.get('/message')
 def index():
-    return {'data': 'FastAPI is great!'}
+    return {'data': 'FastAPI is great v2!'}
 
 @app.get("/info")
 async def info(settings: Annotated[Settings, Depends(get_settings)]):
