@@ -25,7 +25,7 @@ jwt_config = JWTConfig(
     client_id=settings.client_id,
     client_secret=settings.client_secret,
     jwt_key_id=settings.jwt_key_id,
-    private_key=settings.private_key,
+    private_key=settings.private_key.replace("\\n","\n"),
     private_key_passphrase=settings.private_key_passphrase,
     enterprise_id=settings.enterprise_id,
 )
