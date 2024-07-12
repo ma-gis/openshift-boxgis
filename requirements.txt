@@ -1,2 +1,4 @@
 fastapi[all]
+box-sdk-gen[jwt]
+pyproj
 uvicorn
