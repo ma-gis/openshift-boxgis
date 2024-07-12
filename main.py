@@ -12,7 +12,7 @@ def get_settings():
 
 @app.get('/')
 def index():
-    return {'data': 'Awesome FastAPI!'}
+    return {'data': 'Awesome FastAPI 3!'}
 
 @app.get("/info")
 async def info(settings: Annotated[Settings, Depends(get_settings)]):
