@@ -39,7 +39,8 @@ ags_service_url = settings.ags_service_url
 @app.get('/')
 def index():
     logger.debug(f"Root was called!!!")
-    return {'data': 'Awesome BoxGIS API!'}
+    return {'data': 'Awesome BoxGIS API!',
+            'jwt': jwt_config}
 
 @app.post("/webhook")
 async def webhook(request: Request):
